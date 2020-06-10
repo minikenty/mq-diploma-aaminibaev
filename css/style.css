@@ -530,6 +530,8 @@ h4 {
   }
 
   .footer_container {
+    padding-left: 32px;
+    padding-right: 32px;
     padding-top: 13vh;
     padding-bottom: 2.5vh;
   }
