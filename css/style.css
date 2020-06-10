@@ -358,6 +358,8 @@ h4 {
   }
 
   .header_container {
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 9.3vh;
   }
 
