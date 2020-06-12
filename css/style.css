@@ -69,20 +69,19 @@ h1 {
 
 .header_title {
   max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header_title span {
-  display:block;
-  margin-top: 20px;
-  margin-left: 42px;
+  display:flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-left: 1.5em;
 }
 
 .storebutton_link {
   display: flex;
   padding-left: 80px;
-  width: 280px;
+  min-width: 280px;
   height: 35px;
   background-color: #5e42b0;
   border-radius: 17px;
@@ -354,6 +353,14 @@ h4 {
   text-transform: uppercase;
 }
 
+/*
+@media (min-width: 320px) {
+  h1 {
+    font-size: calc(8vw + 0.15rem);
+  }
+}
+*/
+
 @media (min-width: 641px) {
   .header {
     background-image: url("../images/football_1280.jpg");
@@ -377,13 +384,10 @@ h4 {
     max-width: 600px;
   }
 
-  .header_title_end {
-    margin-top: 20px;
-    margin-left: 94px;
-  }
-
   .header_storebuttons, .footer_storebuttons {
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
 
   .storebutton_link {
@@ -567,17 +571,12 @@ h4 {
   }
 
   .header_title {
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
     max-width: 1532px;
   }
 
-  .header_title_start {
-    left: 0;
-  }
-
-  .header_title_end {
-    margin-left: auto;
+  .header_title span {
+    padding-top: 0;
   }
 
   .users_title_content, .item_content {
