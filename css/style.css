@@ -64,7 +64,7 @@ body {
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: calc(8vw + 0.15rem);
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
@@ -72,7 +72,7 @@ h1 {
 }
 
 .header_title {
-  max-width: 280px;
+  padding-left: 6vw;
 }
 
 .header_title span {
@@ -322,25 +322,17 @@ h3 {
 
 h4 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: calc(12vw - 0.7rem);
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
 }
 
 .download_text{
-  font-size: 0.875rem;
+  font-size: calc(4.8vw - 0.1rem);
   color: #9b8ec1;
   text-transform: uppercase;
 }
-
-/*
-@media (min-width: 320px) {
-  h1 {
-    font-size: calc(8vw + 0.15rem);
-  }
-}
-*/
 
 @media (min-width: 641px) {
   .header {
@@ -357,12 +349,8 @@ h4 {
     width: 205px;
   }
 
-  h1 {
-    font-size: 4rem;
-  }
-
   .header_title {
-    max-width: 600px;
+    padding-left: 9vw;
   }
 
   .header_storebuttons, .footer_storebuttons {
@@ -509,17 +497,23 @@ h4 {
     margin-top: 8.6vh;
   }
 
+  .footer_storebuttons {
+    margin-top: auto;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: calc(2.25vw + 2.9rem);
+  }
+
   h4 {
     font-size: 5rem;
   }
 
   .download_text {
     font-size: 2.25rem;
-  }
-
-  .footer_storebuttons {
-    margin-top: auto;
-    margin-bottom: 5vh;
   }
 }
 
@@ -532,11 +526,8 @@ h4 {
     padding-bottom: 11.4vh;
   }
 
-  h1 {
-    font-size: 5.6rem;
-  }
-
   .header_title {
+    padding-left: 0;
     width: 100%;
     max-width: 1532px;
   }
@@ -676,5 +667,11 @@ h4 {
 
   .feature_text {
     margin-top: 60px;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 5.6rem;
   }
 }
