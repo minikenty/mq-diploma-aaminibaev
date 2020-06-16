@@ -29,7 +29,12 @@ body {
   background-position: center center;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 5vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 14vh;
+  box-sizing: border-box;
 }
 
 .header::after {
@@ -46,21 +51,14 @@ body {
 .header_container {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding-top: 5.8vh;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15vh;
   box-sizing: border-box;
 }
 
 .header_logo, .footer_logo {
   width: 133px;
   fill: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -72,7 +70,10 @@ h1 {
 }
 
 .header_title {
+  margin-top: 22vh;
   padding-left: 6vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header_title span {
@@ -80,6 +81,16 @@ h1 {
   justify-content: flex-end;
   padding-top: 20px;
   padding-left: 1.5em;
+}
+
+.header_storebuttons, .footer_storebuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_storebuttons {
+  margin-top: 15vh;
 }
 
 .storebutton_link {
@@ -265,7 +276,10 @@ h3 {
   background-position: center center;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 17vh;
+  padding-bottom: 1.7vh;
+  box-sizing: border-box;
 }
 
 .footer::after {
@@ -286,12 +300,8 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 17vh;
-  padding-bottom: 1.7vh;
-  box-sizing: border-box;
 }
 
 .footer_heading {
@@ -308,6 +318,7 @@ h3 {
   justify-content: center;
   align-items: center;
   border-radius: 20%;
+  flex-shrink: 0;
 }
 
 .footer_appicon .surface_logo {
@@ -334,15 +345,23 @@ h4 {
   text-transform: uppercase;
 }
 
+.footer_storebuttons {
+  margin-top: 13vh;
+}
+
+.footer_logo {
+  margin-top: 14vh;
+}
+
 @media (min-width: 641px) {
   .header {
     background-image: url("../images/football_1280.jpg");
+    padding-bottom: 9.3vh;
   }
 
   .header_container {
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 9.3vh;
   }
 
   .header_logo, .footer_logo {
@@ -350,13 +369,18 @@ h4 {
   }
 
   .header_title {
+    margin-top: 18vh;
     padding-left: 9vw;
   }
 
   .header_storebuttons, .footer_storebuttons {
     width: 100%;
-    display: flex;
+    flex-direction: row;
     justify-content: center;
+  }
+
+  .header_storebuttons {
+    margin-top: 30vh;
   }
 
   .storebutton_link {
@@ -479,13 +503,14 @@ h4 {
 
   .footer {
     background-image: url("../images/game_1280.jpg");
+    padding-top: 13vh;
+    padding-bottom: 2.5vh;
   }
 
   .footer_container {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 13vh;
-    padding-bottom: 2.5vh;
+    box-sizing: border-box;
   }
 
   .footer_appicon {
@@ -498,8 +523,11 @@ h4 {
   }
 
   .footer_storebuttons {
-    margin-top: auto;
-    margin-bottom: 5vh;
+    margin-top: 30vh;
+  }
+
+  .footer_logo {
+    margin-top: 5.6vh;
   }
 }
 
@@ -520,20 +548,29 @@ h4 {
 @media (min-width: 961px) {
   .header {
     background-image: url("../images/football_1920.jpg");
-  }
-
-  .header_container {
     padding-bottom: 11.4vh;
   }
 
-  .header_title {
-    padding-left: 0;
-    width: 100%;
+  .header_container {
     max-width: 1532px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header_title {
+    width: 100%;
+    margin-top: 30vh;
+    padding-left: 0;
   }
 
   .header_title span {
     padding-top: 0;
+  }
+
+  .header_storebuttons {
+    margin-top: 23vh;
   }
 
   .users_title_content, .item_content {
@@ -579,11 +616,16 @@ h4 {
 
   .footer {
     background-image: url("../images/game_1920.jpg");
+    padding-top: 23.8vh;
+    padding-bottom: 5.4vh;
   }
 
   .footer_container {
-    padding-top: 23vh;
-    padding-bottom: 5vh;
+    max-width: 1532px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer_heading {
@@ -603,6 +645,10 @@ h4 {
   .footer_storebuttons {
     margin-top: 15vh;
     margin-bottom: auto;
+  }
+
+  .footer_logo {
+    margin-top: 27vh;
   }
 }
 
